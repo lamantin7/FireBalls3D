@@ -723,6 +723,7 @@ GameObject:
   - component: {fileID: 812202301}
   - component: {fileID: 812202303}
   - component: {fileID: 812202302}
+  - component: {fileID: 812202304}
   m_Layer: 5
   m_Name: Lighteffect
   m_TagString: Untagged
@@ -770,7 +771,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 7a6711abd93df7643bb7e19edfe16f84, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00004bf6717dda94ab3a2b13913012e5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -788,6 +789,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 812202300}
   m_CullTransparentMesh: 1
+--- !u!114 &812202304
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 812202300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c171f082b88ecf4cb25553214778af1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _speed: 1
 --- !u!1 &1018455738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1325,6 +1339,7 @@ GameObject:
   - component: {fileID: 1424064324}
   - component: {fileID: 1424064323}
   - component: {fileID: 1424064322}
+  - component: {fileID: 1424064326}
   - component: {fileID: 1424064325}
   m_Layer: 5
   m_Name: PlayButton
@@ -1447,12 +1462,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b790a7447f4f4e84e86aaa7c0354cc55, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _scaleFrom: {x: 0, y: 0, z: 0}
+  _scaleTo: {x: 0, y: 0, z: 0}
+  _duration: 0
+  _scaleCurve:
+    serializedVersion: 2
+    m_Curve: []
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &1424064326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424064320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b790a7447f4f4e84e86aaa7c0354cc55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _scaleFrom: {x: 1, y: 1, z: 1}
   _scaleTo: {x: 1.5, y: 1.5, z: 1.5}
   _duration: 1
   _scaleCurve:
+    serializedVersion: 2
     m_Curve:
-    - time: 0
+    - serializedVersion: 3
+      time: 0
       value: 0
       inSlope: 2
       outSlope: 2
@@ -1460,7 +1498,8 @@ MonoBehaviour:
       weightedMode: 0
       inWeight: 0
       outWeight: 0
-    - time: 1
+    - serializedVersion: 3
+      time: 1
       value: 1
       inSlope: 0
       outSlope: 0

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PulseButtonanimation : MonoBehaviour
+public class PulseButtonAnimation : MonoBehaviour
 {
     [SerializeField] private Vector3 _scaleFrom;
     [SerializeField] private Vector3 _scaleTo;
