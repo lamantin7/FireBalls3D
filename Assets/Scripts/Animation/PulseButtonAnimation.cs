@@ -14,7 +14,7 @@ public class PulseButtonAnimation : MonoBehaviour
     
     private void ApplyAnimation(Vector3TweenData tweenData)
     {
-        transform.DOScale(tweenData.EndValues, tweenData.Duration)
+        transform.DOScale(tweenData.To, tweenData.Duration)
             .SetEase(tweenData.Ease)
             .SetLoops(-1,LoopType.Yoyo);
     }
