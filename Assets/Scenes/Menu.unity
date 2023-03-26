@@ -814,7 +814,8 @@ AudioSource:
   m_GameObject: {fileID: 1018455738}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7738949487173922054, guid: 86ea64c91f5d3e342babcd38ac09a552,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 9c81708937d7b400f94950a59f4ca6bb, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1336,7 +1337,8 @@ AudioSource:
   m_GameObject: {fileID: 1173161954}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7738949487173922054, guid: 86ea64c91f5d3e342babcd38ac09a552,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 2b8670b132d29984c93743808adbfcb3, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -1452,6 +1454,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: 662b2b3fc8938cf44bd37a739ccb794d, type: 3}
   _audioClip: {fileID: 8300000, guid: 5da10817ef5d7c343bdbfbfb1801da9e, type: 3}
+  _volumeExposedParameter: MusicVolume
+  _audioMixer: {fileID: 24100000, guid: 86ea64c91f5d3e342babcd38ac09a552, type: 2}
 --- !u!114 &1173161964
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1466,6 +1470,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: 9f986710088971c46bd643b866c41a8e, type: 3}
   _audioClip: {fileID: 8300000, guid: ddd16025d5ef32249bf91ac485f99fd8, type: 3}
+  _volumeExposedParameter: MusicVolume
+  _audioMixer: {fileID: 24100000, guid: 86ea64c91f5d3e342babcd38ac09a552, type: 2}
 --- !u!1001 &1178211154
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1592,10 +1598,11 @@ AudioSource:
   m_GameObject: {fileID: 1269951795}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 4535192940183614203, guid: 86ea64c91f5d3e342babcd38ac09a552,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 9cc680861ef98064ab6836a8fc9e28d5, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.7
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1911,8 +1918,9 @@ AudioSource:
   m_GameObject: {fileID: 1424064320}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ddd16025d5ef32249bf91ac485f99fd8, type: 3}
+  OutputAudioMixerGroup: {fileID: 7738949487173922054, guid: 86ea64c91f5d3e342babcd38ac09a552,
+    type: 2}
+  m_audioClip: {fileID: 8300000, guid: 8e8218f6a01e74bd5894788e3f912635, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -2567,10 +2575,11 @@ AudioSource:
   m_GameObject: {fileID: 1706934119}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7738949487173922054, guid: 86ea64c91f5d3e342babcd38ac09a552,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 147ac7146f7b2fd49afd61ce4b64d530, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.5
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -2800,7 +2809,8 @@ AudioSource:
   m_GameObject: {fileID: 1746060173}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 7738949487173922054, guid: 86ea64c91f5d3e342babcd38ac09a552,
+    type: 2}
   m_audioClip: {fileID: 8300000, guid: 632b1c41f6a368540970d173af4f782f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
@@ -2916,6 +2926,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: 09868a2567e8e495c84e92bfe43dbed3, type: 3}
   _audioClip: {fileID: 8300000, guid: 5da10817ef5d7c343bdbfbfb1801da9e, type: 3}
+  _volumeExposedParameter: SFXvolume
+  _audioMixer: {fileID: 24100000, guid: 86ea64c91f5d3e342babcd38ac09a552, type: 2}
 --- !u!114 &1746060183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2930,6 +2942,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _icon: {fileID: 21300000, guid: 38ec0776fb6b2455a9d6166b4814d5e2, type: 3}
   _audioClip: {fileID: 8300000, guid: ddd16025d5ef32249bf91ac485f99fd8, type: 3}
+  _volumeExposedParameter: SFXvolume
+  _audioMixer: {fileID: 24100000, guid: 86ea64c91f5d3e342babcd38ac09a552, type: 2}
 --- !u!1001 &1849542283
 PrefabInstance:
   m_ObjectHideFlags: 0

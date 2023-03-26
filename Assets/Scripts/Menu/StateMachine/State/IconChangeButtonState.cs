@@ -25,9 +25,11 @@ namespace StateMachine
             _image.sprite = _icon;
             _audioSource.PlayOneShot(_audioClip);
             _audioSource.mute=false;
+            OnStateEnter();
             
         }
 
+        protected virtual void OnStateEnter() { }
         
     }
     

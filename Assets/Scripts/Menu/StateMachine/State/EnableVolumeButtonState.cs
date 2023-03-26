@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 namespace StateMachine
 {
-    public class EnableVolumeButtonState :ConfigureVolumeButtonState
+    public class EnableVolumeButtonState : ConfigureVolumeButtonState
     {
-
-
+        protected override float VolumeLevel => 0.0f;
     }
 }
