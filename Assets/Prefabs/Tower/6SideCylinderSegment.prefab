@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 4724565274426210716}
   - component: {fileID: 5031978421818832590}
   - component: {fileID: 329090196934471133}
+  - component: {fileID: 6804229946843975454}
   m_Layer: 0
   m_Name: 6SideCylinderSegment
   m_TagString: Untagged
@@ -634,3 +635,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 0}
+--- !u!114 &6804229946843975454
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3828565085658262053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a8baed767259f145990d364a438b48f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
