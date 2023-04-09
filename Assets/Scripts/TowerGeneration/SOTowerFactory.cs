@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -22,15 +23,18 @@ namespace TowerGeneration
 
         private int SpawnTimePerSegmentMilliseconds => (int)(_spawnTimePerSegment * 1000);
 
-        public async Task<Tower> CreateAsync(Transform tower)
+        public async Task<Tower> CreateAsync(Transform tower, CancellationToken cancellationToken)
         {
             Vector3 position = tower.position;
             var segments = new Queue<TowerSegment>(_segmentCount);
             for (int i = 0; i < _segmentCount; i++)
             {
+                if (cancellationToken.IsCancellationRequested)
+                    break;
                 TowerSegment segment = CreateSegment(tower, position, i);
                 segments.Enqueue(segment);
-                await Task.Delay(SpawnTimePerSegmentMilliseconds);
+                position=RefreshPosition(segment.transform, position);
+                await Task.Delay(SpawnTimePerSegmentMilliseconds, cancellationToken);
             }
             return new Tower(segments);
         }
@@ -42,6 +46,11 @@ namespace TowerGeneration
 
             return segment;
         } 
+        private Vector3 RefreshPosition (Transform segment, Vector3 currentPosition)
+        {
+            float segmentHeight=segment.localScale.y;
+            return currentPosition+Vector3.up * segmentHeight;
+        }
         private Material GetSegmentMaterialBy(int numberOfInstance)
         {
             int index=numberOfInstance%_materials.Length;
