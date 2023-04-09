@@ -1884,6 +1884,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1599688789}
+    - target: {fileID: 4524247381334648887, guid: 64ca495f0b0f8dc41b24190490aafa46,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4938016199565069789, guid: 64ca495f0b0f8dc41b24190490aafa46,
         type: 3}
       propertyPath: m_Mesh
