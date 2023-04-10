@@ -4,15 +4,10 @@ using UnityEngine;
 
 public class ObstalceMovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //[SerializeField] private float _speed;
+    //void FixedUpdate()
+    //{        
+    //    float angle=_speed;
+    //    transform.Rotate(Vector3.up, angle);
+    //}
 }
