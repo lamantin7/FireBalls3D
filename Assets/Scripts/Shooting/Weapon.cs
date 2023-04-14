@@ -17,6 +17,6 @@ public class Weapon : MonoBehaviour
     public void Shoot() =>
         Object
         .Instantiate(_projilePrefab)
-        .Shoot(_shootPoint.position, _shootPoint.forward, _projectileSpeed);
+        .Shoot(_shootPoint.position, _shootPoint.right, _projectileSpeed);
         
 }
