@@ -5,23 +5,20 @@ using UnityEngine;
 public class FireRate : MonoBehaviour
 {
     private readonly float _value;
-    private readonly Weapon _weapon;
+   
 
     private float _lastShootTime;
-    public FireRate(float value,Weapon weapon)
-    {
-        _weapon = weapon;
+    public FireRate(float value) =>
         _value = value;
-    }
 
     private bool _canShoot=>Time.time >= _lastShootTime+1.0f/_value;
 
-    public void Shoot()
+    public void Shoot(Weapon weapon)
     {
         if(!_canShoot)
             return;
 
-        _weapon.Shoot();
+        weapon.Shoot();
         _lastShootTime = Time.time;
 
     }
