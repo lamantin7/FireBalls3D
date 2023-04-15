@@ -3575,6 +3575,7 @@ MonoBehaviour:
     type: 3}
   _character: {fileID: 972243362}
   _projectileSpeed: 15
+  _rate: 5
 --- !u!4 &1757514336
 Transform:
   m_ObjectHideFlags: 0
