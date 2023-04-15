@@ -25,7 +25,7 @@ namespace PlayerComponents
         {
             _weapon = _shootingPreferences.CreateWeapon(_character.ShootPoint);
             _fireRate = _shootingPreferences.CreateFireRate();
-            _pathFollowing = new PathFollowing(_path, this, _movePreference);
+            _pathFollowing = new PathFollowing(_path, this, _movePreference);;
 
             
         }
