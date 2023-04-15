@@ -46,7 +46,8 @@ namespace Paths
 
                 followerTransform
                     .DOLookAt(position,_preferences.RotateDuration)
-                    .OnComplete(()=>followerTransform
+                    .OnComplete(()=>
+                    followerTransform
                     .DOMove(position,_preferences.DurationPerWaypoint));
                 yield return new WaitForSeconds(_preferences.TotalDuration);
                 index++;

@@ -272,8 +272,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4324712220717951058}
-  - component: {fileID: 3208036708162772497}
   - component: {fileID: 844218392518372174}
+  - component: {fileID: 3208036708162772497}
   m_Layer: 0
   m_Name: Path1 1
   m_TagString: Untagged
@@ -301,6 +301,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &844218392518372174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8344259520574671829}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d242563c7d23f4e98b150e3deb5fbe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _path: {fileID: 3208036708162772497}
+  _waypointRadius: 0.25
+  _waypointColor: {r: 1, g: 0, b: 0, a: 1}
+  _lineColor: {r: 0, g: 0.054832935, b: 1, a: 1}
 --- !u!114 &3208036708162772497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -321,22 +337,6 @@ MonoBehaviour:
     - {fileID: 1799977961166622986}
     - {fileID: 8179628910401965983}
     - {fileID: 4225574338637213264}
---- !u!114 &844218392518372174
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8344259520574671829}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2d242563c7d23f4e98b150e3deb5fbe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _path: {fileID: 3208036708162772497}
-  _waypointRadius: 0.25
-  _waypointColor: {r: 1, g: 0, b: 0, a: 1}
-  _lineColor: {r: 0, g: 0.054832935, b: 1, a: 1}
 --- !u!1 &8593596860137185662
 GameObject:
   m_ObjectHideFlags: 0
