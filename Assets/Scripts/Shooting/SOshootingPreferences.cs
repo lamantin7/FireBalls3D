@@ -1,5 +1,3 @@
-using Factory;
-using Pool;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,16 +6,13 @@ using UnityEngine;
 public class SOshootingPreferences : ScriptableObject
 {
     [Header("Projectile")]
-    [SerializeField] private ProjectileFactory _projectileFactory;
+    [SerializeField] private Projectile _projectilePrefab;
   
     [SerializeField] [Min(0.0f)]private float _projectileSpeed;
     [SerializeField] [Min(0.0f)]private float _fireRate;
 
-    public ProjectileFactory ProjectileFactory=> _projectileFactory;
-
-    public float FireRate => _fireRate;
-    public float ProjectileSpeed => _projectileSpeed;
-
-    
+    public Weapon CreateWeapon (Transform shootPoint)=>
+        new Weapon (shootPoint, _projectilePrefab, _projectileSpeed);
+    public FireRate CreateFireRate() => new FireRate(_fireRate);
    
 }

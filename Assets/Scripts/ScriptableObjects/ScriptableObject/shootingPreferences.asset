@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f2e1465871efd5469af8edb96538c6c, type: 3}
   m_Name: shootingPreferences
   m_EditorClassIdentifier: 
-  _projectileFactory: {fileID: 11400000, guid: bbd92895a5a5d06429736db47aa11e86, type: 2}
+  _projectilePrefab: {fileID: -5199454978705601420, guid: d4c8ce5b9c63a5045ba22f5d5e420c65,
+    type: 3}
   _projectileSpeed: 15
   _fireRate: 10
