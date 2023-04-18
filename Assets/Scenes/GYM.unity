@@ -3690,10 +3690,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _character: {fileID: 972243362}
-  _shootingPreferences: {fileID: 11400000, guid: 1b239dc301280e94fae9a9f689590159,
+  _SOshootingPreferences: {fileID: 11400000, guid: 1b239dc301280e94fae9a9f689590159,
     type: 2}
+<<<<<<< HEAD
   _projectilePool: {fileID: 130556806}
   _path: {fileID: 4324712219560386945}
+=======
+  _path: {fileID: 3208036708162772497, guid: 64ca495f0b0f8dc41b24190490aafa46, type: 3}
+>>>>>>> parent of 35a1f8b (repair move character)
   _movePreference: {fileID: 11400000, guid: 5d15abea3c823aa4d97283640fda87b1, type: 2}
 --- !u!4 &1757514336
 Transform:
@@ -4479,15 +4483,3 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1159662034}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &4324712219560386945 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3208036708162772497, guid: 64ca495f0b0f8dc41b24190490aafa46,
-    type: 3}
-  m_PrefabInstance: {fileID: 1159662034}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 249ca44aefdfc8646922debfe13aa9df, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 

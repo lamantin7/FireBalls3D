@@ -23,11 +23,17 @@ namespace PlayerComponents
 
         private void Start()
         {
+<<<<<<< HEAD
             _projectilePool.Initialize(_shootingPreferences.ProjectileFactory);
             _projectilePool.Prewarm(20);
             _weapon = new Weapon(_character.ShootPoint, _projectilePool,_shootingPreferences.ProjectileSpeed);
             _fireRate = new FireRate(_shootingPreferences.FireRate);
             _pathFollowing = new PathFollowing(_path, this, _movePreference);;
+=======
+            _weapon = _shootingPreferences.CreateWeapon(_character.ShootPoint);
+            _fireRate = _shootingPreferences.CreateFireRate();
+            _pathFollowing = new PathFollowing(_path, this, _movePreference);
+>>>>>>> parent of 35a1f8b (repair move character)
 
             
         }
