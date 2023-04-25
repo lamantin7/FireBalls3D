@@ -1842,18 +1842,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &972243362 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9002449301435172735, guid: 62fb79e6ff8a0f543bab9cbe13d74a5a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1880889446}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f171fa947077c84981e41414e7f138b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &972243363 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2726215225035231030, guid: 62fb79e6ff8a0f543bab9cbe13d74a5a,
@@ -3854,12 +3842,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaf2f377b8d285647946c260f62100b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _character: {fileID: 972243362}
+  _characterContainer: {fileID: 11400000, guid: 325e574c7fcbed44db4709daeda7c2f0,
+    type: 2}
+  _path: {fileID: 4324712219560386945}
+  _movePreference: {fileID: 11400000, guid: 5d15abea3c823aa4d97283640fda87b1, type: 2}
   _shootingPreferences: {fileID: 11400000, guid: 1b239dc301280e94fae9a9f689590159,
     type: 2}
   _projectilePool: {fileID: 1996668223}
-  _path: {fileID: 4324712219560386945}
-  _movePreference: {fileID: 11400000, guid: 5d15abea3c823aa4d97283640fda87b1, type: 2}
 --- !u!4 &1757514336
 Transform:
   m_ObjectHideFlags: 0
