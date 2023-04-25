@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Physics
+namespace MyPhysics
 {
     [System.Serializable]
     public class DirectionalBouncePreferences

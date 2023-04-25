@@ -4,8 +4,6 @@ using UnityEngine;
 
 namespace PlayerComponents
 {
-
-
     public class PlayerInputHandler : MonoBehaviour
     {
         [Header("Input")]
@@ -22,6 +20,8 @@ namespace PlayerComponents
         {
             _touchPanel.Holding -= Shoot;
         }
+        public void Enable()=>enabled = false;
+        public void Disable()=>enabled = true;
         private void Shoot(Touching touch) => _player.Shoot();
     }
 }
