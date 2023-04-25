@@ -1,3 +1,4 @@
+using Pool;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,18 +6,17 @@ using UnityEngine;
 public class Weapon : MonoBehaviour
 {
     private readonly Transform _shootPoint;
-   private readonly Projectile _projilePrefab;
+   private readonly IPool<Projectile> _pool;
     private readonly float _projectileSpeed;
 
-    public Weapon(Transform shootPoint, Projectile projile, float projectileSpeed)
+    public Weapon(Transform shootPoint, IPool<Projectile> pool, float projectileSpeed)
     {
         _shootPoint = shootPoint;
-        _projilePrefab = projile;
+        _pool=pool;
         _projectileSpeed = projectileSpeed;
     }
     public void Shoot() =>
-        Object
-        .Instantiate(_projilePrefab)
+        _pool.Request()
         .Shoot(_shootPoint.position, _shootPoint.forward, _projectileSpeed);
         
 }
