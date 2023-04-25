@@ -10,7 +10,7 @@ using UnityEngine;
 namespace Towers.Generation
 {
     [CreateAssetMenu(fileName = "TowerFactory", menuName = "ScriptableObjects/Tower/Factory")]
-    public class SOTowerFactory : ScriptableObject, IAsyncTowerFactory
+    public class SOTowerFactory : ScriptableObject, IAsyncTowerFactory, ITowerSegmentCreationCallback
     {
         [SerializeField] private TowerSegment _segmentPrefab;
 
@@ -20,6 +20,8 @@ namespace Towers.Generation
 
         [Space]
         [SerializeField] private Material[] _materials=Array.Empty<Material>();
+
+        public event Action SegmentCreated;
 
         private int SpawnTimePerSegmentMilliseconds => (int)(_spawnTimePerSegment * 1000);
 
@@ -34,6 +36,7 @@ namespace Towers.Generation
                 TowerSegment segment = CreateSegment(tower, position, i);
                 segments.Enqueue(segment);
                 position=RefreshPosition(segment.transform, position);
+                SegmentCreated?.Invoke();
                 await Task.Delay(SpawnTimePerSegmentMilliseconds, cancellationToken);
             }
             return new Tower(segments);
