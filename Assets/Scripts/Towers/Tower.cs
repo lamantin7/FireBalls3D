@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace TowerGeneration
+namespace Towers.Generation
 {
     public class Tower
     {

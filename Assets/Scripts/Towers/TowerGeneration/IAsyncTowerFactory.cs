@@ -2,7 +2,7 @@
 using System.Threading.Tasks;
 using System.Threading;
 
-namespace TowerGeneration
+namespace Towers.Generation
 {
    public interface IAsyncTowerFactory
     {
