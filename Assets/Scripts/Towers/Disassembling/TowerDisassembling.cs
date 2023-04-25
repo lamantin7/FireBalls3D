@@ -19,12 +19,23 @@ namespace Towers.Disassembling
             _tower = tower;
             _towerRoot = towerRoot;
         }
+        public event Action Disassembled;
         public void RemoveBottom()
         {
+            if (_tower.SegmentCount == 0)
+            {
+                Disassembled?.Invoke();
+                return;
+
+            }
+               
             TowerSegment segment = _tower.RemoveBottom();
             Vector3 segmentScale = segment.transform.localScale;
             _towerRoot.position-=Vector3.up*segmentScale.y;
             UnityObject.Destroy(segment.gameObject);
+           
+            
+            
         }
     }
 }
