@@ -286,6 +286,7 @@ MonoBehaviour:
   _towerRoot: {fileID: 1839221107}
   _generator: {fileID: 105061353}
   _projectileHitTrigger: {fileID: 1231881505}
+  _segmentsLeftText: {fileID: 879182244}
 --- !u!43 &130336688
 Mesh:
   m_ObjectHideFlags: 0
@@ -1398,6 +1399,7 @@ GameObject:
   - component: {fileID: 879182241}
   - component: {fileID: 879182243}
   - component: {fileID: 879182242}
+  - component: {fileID: 879182244}
   m_Layer: 0
   m_Name: SegmentsLeftText
   m_TagString: Untagged
@@ -1559,6 +1561,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &879182244
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 879182240}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6134d0bbf0fa3de44818e0ac03f587a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _text: {fileID: 879182242}
 --- !u!1 &889860225
 GameObject:
   m_ObjectHideFlags: 0
