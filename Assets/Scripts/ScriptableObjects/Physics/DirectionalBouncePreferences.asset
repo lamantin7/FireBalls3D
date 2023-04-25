@@ -9,10 +9,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f2e1465871efd5469af8edb96538c6c, type: 3}
-  m_Name: shootingPreferences
+  m_Script: {fileID: 11500000, guid: 73948eeafc569314794a6742a9585828, type: 3}
+  m_Name: DirectionalBouncePreferences
   m_EditorClassIdentifier: 
-  _projectilePrefab: {fileID: -5199454978705601420, guid: d4c8ce5b9c63a5045ba22f5d5e420c65,
-    type: 3}
-  _projectileSpeed: 15
-  _fireRate: 10
+  _prefences:
+    Duration: 0
+    Height: 0
+    Trajectory:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4

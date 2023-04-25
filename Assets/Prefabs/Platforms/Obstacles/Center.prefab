@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3850616855626105728
+--- !u!1 &3196660585571653410
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,12 +8,11 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1622816054226512479}
-  - component: {fileID: 4154838013802419895}
-  - component: {fileID: 7635768412256324517}
-  - component: {fileID: 8911930484922583306}
-  - component: {fileID: 8162001987875940114}
-  - component: {fileID: 2809454846774921974}
+  - component: {fileID: 4266246639480915309}
+  - component: {fileID: 4930930626269836399}
+  - component: {fileID: 2000774149942922949}
+  - component: {fileID: 1621517904171146306}
+  - component: {fileID: 7573924944298463387}
   m_Layer: 0
   m_Name: 3SegmentObstacle
   m_TagString: Untagged
@@ -21,28 +20,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1622816054226512479
+--- !u!4 &4266246639480915309
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850616855626105728}
+  m_GameObject: {fileID: 3196660585571653410}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.62722814, y: 0.8, z: 3.8882596}
   m_LocalScale: {x: 9, y: 1, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 7981449815016292500}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4154838013802419895
+--- !u!114 &4930930626269836399
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850616855626105728}
+  m_GameObject: {fileID: 3196660585571653410}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8233d90336aea43098adf6dbabd606a2, type: 3}
@@ -600,18 +599,18 @@ MonoBehaviour:
   m_PreserveMeshAssetOnDestroy: 0
   assetGuid: 
   m_Mesh: {fileID: 0}
-  m_VersionIndex: 10249
+  m_VersionIndex: 10255
   m_IsSelectable: 1
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
---- !u!23 &7635768412256324517
+--- !u!23 &2000774149942922949
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850616855626105728}
+  m_GameObject: {fileID: 3196660585571653410}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -647,41 +646,111 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!33 &8911930484922583306
+--- !u!33 &1621517904171146306
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850616855626105728}
+  m_GameObject: {fileID: 3196660585571653410}
   m_Mesh: {fileID: 0}
---- !u!65 &8162001987875940114
+--- !u!65 &7573924944298463387
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850616855626105728}
+  m_GameObject: {fileID: 3196660585571653410}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.44840127, y: 1, z: 0.13594224}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2809454846774921974
+--- !u!1 &8013729442993009820
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7981449815016292500}
+  - component: {fileID: 7254804513072950617}
+  m_Layer: 0
+  m_Name: Center
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7981449815016292500
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8013729442993009820}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 3.5, z: 12.21}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4266246639480915309}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7254804513072950617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3850616855626105728}
+  m_GameObject: {fileID: 8013729442993009820}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2f38e7897b85242b7258bb823b6542, type: 3}
+  m_Script: {fileID: 11500000, guid: c99e3896f5114ed499fc55b5edade518, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _playerInputHandler: {fileID: 0}
-  _pool: {fileID: 0}
-  _bouncePreferences: {fileID: 11400000, guid: fd6a619461ccd104db169b8a820ee01a, type: 2}
-  _projectileFactory: {fileID: 11400000, guid: a14ba0fae50ade94ebac23f619706020, type: 2}
+  _moveDuration:
+    Min: 2
+    Max: 3
+  _changeSpeedDuration:
+    Min: 1
+    Max: 2
+  _speed:
+    Min: 45
+    Max: 80
+  _changeSpeedCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 0.3172581
+      value: 1.1083217
+      inSlope: 3.120282
+      outSlope: 3.120282
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.04471402
+    - serializedVersion: 3
+      time: 1.0232544
+      value: 0.38472748
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
