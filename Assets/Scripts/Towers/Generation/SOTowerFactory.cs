@@ -21,7 +21,7 @@ namespace Towers.Generation
         [Space]
         [SerializeField] private Material[] _materials=Array.Empty<Material>();
 
-        public event Action SegmentCreated;
+        public event Action<int> SegmentCreated;
 
         private int SpawnTimePerSegmentMilliseconds => (int)(_spawnTimePerSegment * 1000);
 
@@ -36,7 +36,7 @@ namespace Towers.Generation
                 TowerSegment segment = CreateSegment(tower, position, i);
                 segments.Enqueue(segment);
                 position=RefreshPosition(segment.transform, position);
-                SegmentCreated?.Invoke();
+                SegmentCreated?.Invoke(i+1);
                 await Task.Delay(SpawnTimePerSegmentMilliseconds, cancellationToken);
             }
             return new Tower(segments);
