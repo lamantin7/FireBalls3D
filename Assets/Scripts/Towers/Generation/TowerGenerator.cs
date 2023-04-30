@@ -11,32 +11,47 @@ using System.Threading.Tasks;
 
 namespace Towers.Generation
 {
-    public class TowerGenerator : MonoBehaviour
+    public class TowerGenerator : IAsyncTowerGenerator, ITowerSegmentCreationCallback, IDisposable
     {
-        [SerializeField] private SOTowerFactory _towerFactory;
-        [SerializeField] private Transform _towerRoot;
-        [SerializeField] private Vector3TweenData _rotationData;
-
-        //private IAsyncTowerFactory TowerFactory => (IAsyncTowerFactory)_towerFactory;
+        
+        private readonly SOTowerStructure _structure;
         private readonly CancellationTokenSource _cancellationTokenSource = new CancellationTokenSource();
-        public ITowerSegmentCreationCallback CreationCallback => _towerFactory;
 
-      
-        private void OnDisable()
+        public TowerGenerator(SOTowerStructure structure)
         {
+            _structure = structure;
+        }
+
+        public event Action<int> SegmentCreated;
+
+        public async Task<Tower> CreateAsync(Transform tower) => 
+            await CreateAsync(tower, _cancellationTokenSource.Token);
+        public void Dispose() => 
             _cancellationTokenSource.Cancel();
-        }
-        [ContextMenu(nameof(Generate))]
-        public async Task<Tower> Generate()
+        private async Task<Tower> CreateAsync(Transform tower, CancellationToken cancellationToken)
         {
-            ApplyRotation(_rotationData);
-            return await _towerFactory.CreateAsync(_towerRoot, _cancellationTokenSource.Token);
+            Vector3 position = tower.position;
+            int segmentCount = _structure.SegmentCount;
+            var segments = new Queue<TowerSegment>(segmentCount);
+            for (int i = 0; i < segmentCount; i++)
+            {
+                if (cancellationToken.IsCancellationRequested)
+                    break;
+                TowerSegment segment = _structure.CreateSegment(tower, position, i);
+                segments.Enqueue(segment);
+                position = RefreshPosition(segment.transform, position);
+                SegmentCreated?.Invoke(i + 1);
+                await Task.Delay(_structure.SpawnTimePerSegmentMilliseconds, cancellationToken);
+            }
+            return new Tower(segments);
         }
-        private void ApplyRotation(Vector3TweenData rotationData)
+        private Vector3 RefreshPosition(Transform segment, Vector3 currentPosition)
         {
-            _towerRoot
-                .DORotate(rotationData.To, rotationData.Duration, RotateMode.FastBeyond360)
-                .SetEase(rotationData.Ease);
+            float segmentHeight = segment.localScale.y;
+            return currentPosition + Vector3.up * segmentHeight;
         }
+
+
+
     }
 }

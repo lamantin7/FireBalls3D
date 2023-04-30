@@ -5,9 +5,9 @@ using System;
 
 namespace Towers.Generation
 {
-   public interface IAsyncTowerFactory
+   public interface IAsyncTowerGenerator
     {
-        Task<Tower> CreateAsync(Transform tower, CancellationToken cancellationToken);
+        Task<Tower> CreateAsync(Transform tower);
     }
   
 }
