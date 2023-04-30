@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3850616855626105728}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.62722814, y: 0.8, z: 3.8882596}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 9, y: 1, z: 9}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -680,8 +680,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b2f38e7897b85242b7258bb823b6542, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
-  _playerInputHandler: {fileID: 0}
-  _pool: {fileID: 0}
-  _bouncePreferences: {fileID: 11400000, guid: fd6a619461ccd104db169b8a820ee01a, type: 2}
   _projectileFactory: {fileID: 11400000, guid: a14ba0fae50ade94ebac23f619706020, type: 2}
+  _bouncePreferences: {fileID: 11400000, guid: fd6a619461ccd104db169b8a820ee01a, type: 2}

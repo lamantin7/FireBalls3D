@@ -15,16 +15,23 @@ namespace Pool
         private readonly IFactory<T> _factory;
         private readonly Transform _root;
 
-        public ComponentPool(IFactory<T> factory, Transform root)
+        private readonly int _initialCapacity;
+
+        public ComponentPool(IFactory<T> factory, Transform root, int intialcapacity)
         {
             
             _factory = factory;
             _root = root;
+            if (intialcapacity < 0)
+                throw new ArgumentException("saa");
+            _initialCapacity = intialcapacity;
+
+            
         }
 
-        public void Prewarm(int capacity)
+        public void Prewarm()
         {
-            for (int i = 0; i < capacity; i++)
+            for (int i = 0; i < _initialCapacity; i++)
             {
                 T member = _factory.Create();
                 Setup(member);

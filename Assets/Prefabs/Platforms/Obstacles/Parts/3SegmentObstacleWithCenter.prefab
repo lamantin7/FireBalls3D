@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 2000774149942922949}
   - component: {fileID: 1621517904171146306}
   - component: {fileID: 7573924944298463387}
+  - component: {fileID: 6495712318243005678}
   m_Layer: 0
   m_Name: 3SegmentObstacle
   m_TagString: Untagged
@@ -667,6 +668,20 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.44840127, y: 1, z: 0.13594224}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6495712318243005678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3196660585571653410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2f38e7897b85242b7258bb823b6542, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _projectileFactory: {fileID: 11400000, guid: a14ba0fae50ade94ebac23f619706020, type: 2}
+  _bouncePreferences: {fileID: 11400000, guid: fd6a619461ccd104db169b8a820ee01a, type: 2}
 --- !u!1 &8013729442993009820
 GameObject:
   m_ObjectHideFlags: 0
@@ -678,7 +693,7 @@ GameObject:
   - component: {fileID: 7981449815016292500}
   - component: {fileID: 7254804513072950617}
   m_Layer: 0
-  m_Name: Center
+  m_Name: 3SegmentObstacleWithCenter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -691,8 +706,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8013729442993009820}
-  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 3.5, z: 12.21}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

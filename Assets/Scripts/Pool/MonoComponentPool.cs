@@ -15,14 +15,11 @@ namespace Pool
         
         private ComponentPool<T> _pool;
         public void Initialize(IFactory<T> factory /*int capacity*/)=>        
-            _pool = new ComponentPool<T>(factory, _root);
+            _pool = new ComponentPool<T>(factory, _root,_prewarmedMemeberCount);
         //_pool.Prewarm(capacity);
 
-        public void Prewarm(int capacity)
-        {
-            Debug.Log("Pool was prewarmed using its own capacity");
-            _pool.Prewarm(_prewarmedMemeberCount);
-        }
+        public void Prewarm() => 
+            _pool.Prewarm();
 
         public T Request() => 
             _pool.Request();

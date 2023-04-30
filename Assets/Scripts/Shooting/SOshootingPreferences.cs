@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Shooting
 {
     [CreateAssetMenu(fileName = "shootingPreferences", menuName = "ScriptableObjects/Shooting/Preferences")]
-    public class SOshootingPreferences : ScriptableObject
+    public class SOShootingPreferences : ScriptableObject
     {
         [Header("Projectile")]
         [SerializeField] private SOProjectileFactory _projectileFactory;

@@ -15,6 +15,6 @@ namespace Paths
 
         public float DurationPerWaypoint=> _durationPerWaypoint;
         public float RotateDuration=> _rotateDuration;
-        public float TotalDuration => _durationPerWaypoint + _rotateDuration;
+        
     }
 }
