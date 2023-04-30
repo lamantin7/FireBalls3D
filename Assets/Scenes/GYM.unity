@@ -210,6 +210,11 @@ PrefabInstance:
       propertyPath: m_Mesh
       value: 
       objectReference: {fileID: 1908465718}
+    - target: {fileID: 4154838013802419895, guid: 3fd6a9313f7b8e54d915de2129e5f727,
+        type: 3}
+      propertyPath: m_VersionIndex
+      value: 10252
+      objectReference: {fileID: 0}
     - target: {fileID: 8911930484922583306, guid: 3fd6a9313f7b8e54d915de2129e5f727,
         type: 3}
       propertyPath: m_Mesh
@@ -226,7 +231,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 105061354}
-  - component: {fileID: 105061353}
   - component: {fileID: 105061355}
   m_Layer: 0
   m_Name: Tower
@@ -235,24 +239,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &105061353
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 105061352}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 97c36d27a5a53f6498faeda6778de66e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _towerFactory: {fileID: 11400000, guid: c88c30bc7f32ade409b7314bd8931305, type: 2}
-  _towerRoot: {fileID: 1839221107}
-  _rotationData:
-    To: {x: 0, y: 1080, z: 0}
-    Duration: 2
-    Ease: 9
 --- !u!4 &105061354
 Transform:
   m_ObjectHideFlags: 0
@@ -285,7 +271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _towerRoot: {fileID: 1839221107}
-  _generator: {fileID: 105061353}
+  _spawnAnimation: {fileID: 0}
   _projectileHitTrigger: {fileID: 1231881505}
   _segmentsLeftText: {fileID: 879182244}
   _audio: {fileID: 960753760}
@@ -1239,7 +1225,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a632ac8e712d3a7479b7e9a9c6963c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pool: {fileID: 1996668223}
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -2958,7 +2943,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a632ac8e712d3a7479b7e9a9c6963c2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pool: {fileID: 1996668223}
 --- !u!65 &1231881506
 BoxCollider:
   m_ObjectHideFlags: 0

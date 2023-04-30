@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace PlayerComponents
+namespace Players
 {
     public class PlayerInputHandler : MonoBehaviour
     {

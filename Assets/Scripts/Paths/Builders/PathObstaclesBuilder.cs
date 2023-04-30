@@ -1,7 +1,7 @@
 ﻿using Obstacles;
 using Obstacles.Disappearing;
 using Obstacles.Generation;
-using PlayerComponents;
+using Players;
 using Shooting.Pool;
 using System;
 using System.Collections.Generic;
