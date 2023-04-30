@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f2e1465871efd5469af8edb96538c6c, type: 3}
-  m_Name: ShootingPreferences
+  m_Name: shootingPreferences
   m_EditorClassIdentifier: 
   _projectileFactory: {fileID: 11400000, guid: a14ba0fae50ade94ebac23f619706020, type: 2}
   _projectileSpeed: 10

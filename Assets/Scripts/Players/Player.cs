@@ -13,7 +13,7 @@ namespace Players
         [SerializeField] private SOCharacterContainer _characterContainer;               
 
         [ Header("Shooting")]
-        [SerializeField] private SOShootingPreferences _shootingPreferences;
+        [SerializeField] private SOShootingPreference _shootingPreferences;
         [SerializeField] private ProjectilePool _projectilePool;
                 
         private FireRate _fireRate;
