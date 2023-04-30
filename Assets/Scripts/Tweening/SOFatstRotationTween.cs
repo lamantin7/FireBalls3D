@@ -9,7 +9,7 @@ using UnityEngine;
 
 namespace Tweening
 {
-    [CreateAssetMenu(fileName = "FatstRotationTween", menuName = "FatstRotationTween/Tweening/FatstRotationTween")]
+    [CreateAssetMenu(fileName = "FatstRotationTween", menuName = "ScriptableObjects/Tweening/FatstRotationTween")]
     internal class SOFatstRotationTween:ScriptableObject, ITweenAnimation
     {
         [SerializeField] private Vector3TweenData _rotation;

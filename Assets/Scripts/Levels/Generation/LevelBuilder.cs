@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace Levels.Generation
 {
-    public class LevelBuilder
+    public class LevelBuilder:MonoBehaviour
     {
         [Header("Path")]
         [SerializeField] private Transform _pathRoot;

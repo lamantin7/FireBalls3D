@@ -7,7 +7,7 @@ namespace Pool
 
     public interface IPool<T>
     {
-        void Prewarm(int capacity);
+        void Prewarm();
         T Request();
         void Return(T member);
 

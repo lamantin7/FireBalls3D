@@ -11,9 +11,7 @@ namespace Players
     public class Player : MonoBehaviour
     {
         [Header("Characteres")]
-        [SerializeField] private SOCharacterContainer _characterContainer;
-
-        
+        [SerializeField] private SOCharacterContainer _characterContainer;               
 
         [ Header("Shooting")]
         [SerializeField] private SOShootingPreferences _shootingPreferences;
@@ -27,7 +25,7 @@ namespace Players
         {
             Character character = _characterContainer.Create(transform);
             _projectilePool.Initialize(_shootingPreferences.ProjectileFactory);
-            _projectilePool.Prewarm(20);
+            _projectilePool.Prewarm();
 
             _weapon = new Weapon (character.ShootPoint,_projectilePool,_shootingPreferences.ProjectileSpeed);
             _fireRate = new FireRate(_shootingPreferences.FireRate);

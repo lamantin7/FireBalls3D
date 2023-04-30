@@ -10,7 +10,7 @@ using UnityEngine;
 
 namespace Paths.Builders
 {
-    public class PathPlatformBuilder
+    public class PathPlatformBuilder:MonoBehaviour
     {
         [SerializeField] private PathTowerBuilder _towerBuilder;
         [SerializeField] private PathObstaclesBuilder _obstaclesBuilder;

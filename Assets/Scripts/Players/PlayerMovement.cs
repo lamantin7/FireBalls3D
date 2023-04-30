@@ -8,7 +8,7 @@ using UnityEngine;
 
 namespace Players
 {
-    public class PlayerMovement
+    public class PlayerMovement:MonoBehaviour
     {      
         [SerializeField] private SOmovePreference _movePreferences;
 
