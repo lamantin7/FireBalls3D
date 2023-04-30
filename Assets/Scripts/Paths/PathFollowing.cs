@@ -40,7 +40,6 @@ namespace Paths
         {
             int index = 1;
             
-
             while(index < waypoints.Count) 
             {
                 Vector3 position = waypoints[index].position;
@@ -50,8 +49,9 @@ namespace Paths
                     .AsyncWaitForCompletion();
                     
                 Task move = follower
-                    .DOMove(position, _preferences.RotateDuration)
+                    .DOMove(position, _preferences.DurationPerWaypoint)
                     .AsyncWaitForCompletion();
+
                 await Task.WhenAll(LookAt, move);
 
                 index++;

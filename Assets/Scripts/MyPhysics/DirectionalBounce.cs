@@ -48,13 +48,12 @@ namespace MyPhysics
                 Vector3 newPosition= CalculatePosition(target, startPosition,t);
                 _bouncer.transform.position = newPosition;
                 yield return null;
-
-                
+                                
             }
 
         }
         private Vector3 CalculatePosition(Vector3 target,Vector3 startPosition, float t)=>
-            Vector3.Lerp(startPosition, target, t)
+            Vector3.Lerp(startPosition, target- new Vector3(0,2,0), t)
             +Vector3.up* (_preferences.Trajectory.Evaluate(t)*_preferences.Height);
     }
 }

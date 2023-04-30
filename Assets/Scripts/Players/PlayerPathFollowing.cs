@@ -22,13 +22,13 @@ namespace Players
             IReadOnlyList<PathSegment> segments = _path.Segments;
             foreach (PathSegment pathSegment in segments)
             {
-                _inputHandler.Disable();
+                _inputHandler.Enable();
                 await _pathFollowing.MoveToNextAsync();
 
                 (TowerDisassembling towerDisassembling, ObstaclesDisappearing obstaclesDisappearing)
                     = await pathSegment.PlatformBuilder.BuildAsync();
 
-                _inputHandler.Enable();
+                _inputHandler.Disable();
 
                 await towerDisassembling;
                 await obstaclesDisappearing.ApplyAsync();
