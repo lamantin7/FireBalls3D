@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace Shooting
 {
-    [CreateAssetMenu(fileName = "shootingPreferences", menuName = "ScriptableObjects/Shooting/Preferences")]
+    [CreateAssetMenu(fileName = "ShootingPreferences", menuName = "ScriptableObjects/Shooting/Preferences")]
     public class SOShootingPreferences : ScriptableObject
     {
         [Header("Projectile")]
