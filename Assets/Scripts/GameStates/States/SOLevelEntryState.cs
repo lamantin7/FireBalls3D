@@ -9,6 +9,7 @@ using UnityEngine;
 
 namespace GameStates.States
 {
+    [CreateAssetMenu(fileName = "LevelEntryState", menuName = "ScriptableObjects/Game/States/LevelEntryState")]
     public class SOLevelEntryState:SOGameState
     {
         [SerializeField] private Scene _scene;
