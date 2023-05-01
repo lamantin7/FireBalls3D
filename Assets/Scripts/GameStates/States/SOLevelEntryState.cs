@@ -1,4 +1,5 @@
 ﻿using GameStates.Base;
+using SceneLoading;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,11 +11,11 @@ namespace GameStates.States
 {
     public class SOLevelEntryState:SOGameState
     {
-        [SerializeField] private string _levelName; 
-        public override void Enter()
-        {
+        [SerializeField] private Scene _scene;
 
-        }
+        private readonly IAsyncSceneLoading _sceneLoading= new UnitySceneLoading();
+        public override void Enter() => 
+            _sceneLoading.LoadAsync(_scene);
         public override void Exit()
         {
 
