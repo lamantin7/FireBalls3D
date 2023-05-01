@@ -28,7 +28,7 @@ namespace Towers.Generation
             await CreateAsync(tower, _cancellationTokenSource.Token);
         public void Dispose() => 
             _cancellationTokenSource.Cancel();
-        private async Task<Tower> CreateAsync(Transform tower, CancellationToken cancellationToken)
+        public async Task<Tower> CreateAsync(Transform tower, CancellationToken cancellationToken)
         {
             Vector3 position = tower.position;
             int segmentCount = _structure.SegmentCount;

@@ -5,6 +5,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using Towers.Disassembling;
 using Towers.Effects;
@@ -34,14 +35,17 @@ namespace Paths.Builders
         {
             _structure= structure;
         }
-        public async Task<TowerDisassembling> BuildAsync(ProjectilePool pool)
+        public async Task<TowerDisassembling> BuildAsync(ProjectilePool pool, CancellationToken cancellationToken)
         {
             _spawnAnimation.ApplyTo(_towerRoot);
             _projectileHitTrigger.Initialize(pool);
             TowerGenerator generator = new TowerGenerator(_structure);
             generator.SegmentCreated += _segmentsLeftText.UpdateTextValue;
-            Tower tower = await generator.CreateAsync(_towerRoot);
+            Tower tower = await generator.CreateAsync(_towerRoot, cancellationToken);
             TowerDisassembling disassembling = new TowerDisassembling(tower, _towerRoot);
+
+            if(cancellationToken.IsCancellationRequested)
+                return disassembling;
 
             SubscribeComponents(generator, tower, disassembling);
             return disassembling;

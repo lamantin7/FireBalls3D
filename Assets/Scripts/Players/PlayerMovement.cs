@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
@@ -16,13 +17,13 @@ namespace Players
         [SerializeField] private PlayerInputHandler _inputHandler;
         [SerializeField] private Transform _player;
 
-        public void StartMovingOn(Path path, Vector3 initialPosition)
+        public void StartMovingOn(Path path, Vector3 initialPosition, CancellationTokenSource cancellationTokenSource)
         {
             _player.position = initialPosition;
             new PlayerPathFollowing(
                 new PathFollowing(path,_player,_movePreferences),
                 path,_inputHandler)
-                .StartMovingAsync();
+                .StartMovingAsync(cancellationTokenSource.Token);
         }
 
     }

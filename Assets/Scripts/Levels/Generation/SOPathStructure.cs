@@ -5,13 +5,14 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEngine;
 
 namespace Levels.Generation
 {
-    [CreateAssetMenu(fileName = "LevelStructure", menuName = "ScriptableObjects/Levels/LevelStructure")]
-    public class SOLevelStructure:ScriptableObject
+    [CreateAssetMenu(fileName = "PathStructure", menuName = "ScriptableObjects/Levels/PathStructure")]
+    public class SOPathStructure:ScriptableObject
     {
         [SerializeField] private Path _pathPrefab;
         [SerializeField] private List<PathPlatformStructure> _platforms = new List<PathPlatformStructure>();
@@ -26,10 +27,10 @@ namespace Levels.Generation
             
         }
 
-        public Path CreatePath(Transform pathToot, ObstacleCollisionFeedback feedback)
+        public Path CreatePath(Transform pathToot, ObstacleCollisionFeedback feedback, CancellationTokenSource cancellationTokenSource)
         {
             Path path = Instantiate(_pathPrefab, pathToot);
-            path.Initialize(_platforms, feedback);
+            path.Initialize(_platforms, feedback, cancellationTokenSource);
 
             return path;
         }
