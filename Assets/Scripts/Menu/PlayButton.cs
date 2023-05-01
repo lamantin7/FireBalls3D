@@ -17,7 +17,7 @@ namespace Menu
         }
         private void LoadLevel() 
         {
-            SceneManager.LoadScene(_levelSceneName);
+            SceneManager.LoadScene(_levelSceneName, LoadSceneMode.Additive);
         }
 
 
