@@ -9,7 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4083add098c009e42b684e22fa4e65b0, type: 3}
-  m_Name: LevelNumber
+  m_Script: {fileID: 11500000, guid: 75e3bf70420b3d34b99f340de78f8e86, type: 3}
+  m_Name: LevelCompletedState
   m_EditorClassIdentifier: 
-  Value: 1
+  _menu:
+    Name: Menu
+    LoadMode: 0
+  _levelChanging: {fileID: 11400000, guid: eaab180d0fd5a6c4394705510499ddb8, type: 2}

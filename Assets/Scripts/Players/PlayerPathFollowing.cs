@@ -1,5 +1,6 @@
 ﻿using Obstacles.Disappearing;
 using Paths;
+using Paths.Completion;
 using System.Collections.Generic;
 using System.Threading;
 using Towers.Disassembling;
@@ -11,12 +12,15 @@ namespace Players
         private readonly PathFollowing _pathFollowing;
         private readonly Path _path;
         private readonly PlayerInputHandler _inputHandler;
+        private readonly IPathCompletion _pathCompletion;
 
-        public PlayerPathFollowing(PathFollowing pathFollowing, Path path, PlayerInputHandler inputHandler)
+
+        public PlayerPathFollowing(PathFollowing pathFollowing, Path path, PlayerInputHandler inputHandler, IPathCompletion pathCompletion)
         {
             _pathFollowing = pathFollowing;
             _path = path;
             _inputHandler = inputHandler;
+            _pathCompletion = pathCompletion;
         }
         public async void StartMovingAsync(CancellationToken cancellationToken)
         {
@@ -37,6 +41,7 @@ namespace Players
                 await towerDisassembling;
                 await obstaclesDisappearing.ApplyAsync();
             }
+            _pathCompletion.Complete();
         }
     }
 }
