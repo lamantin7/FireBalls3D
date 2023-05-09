@@ -265,3 +265,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4810d494c18cb5478733d25b5d919a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _markerHolder: {fileID: 8405637701101252144}
+  _number: {fileID: 352708538384055116}
+--- !u!4 &8405637701101252144 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8541685965644603876, guid: 7f0f8beae496e70499fe2e6d954bdc98,
+    type: 3}
+  m_PrefabInstance: {fileID: 156773680795013076}
+  m_PrefabAsset: {fileID: 0}

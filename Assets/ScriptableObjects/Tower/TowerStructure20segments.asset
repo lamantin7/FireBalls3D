@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fda32db641ee98d4e84492e5301a7e8f, type: 3}
-  m_Name: TowerStructure20segments 1
+  m_Name: TowerStructure20segments
   m_EditorClassIdentifier: 
   _segmentPrefab: {fileID: 6804229946843975454, guid: 779752122f0322b4fa59c056e5ff45b5,
     type: 3}
