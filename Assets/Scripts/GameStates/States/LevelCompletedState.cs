@@ -18,7 +18,7 @@ namespace GameStates.States
         [SerializeField] private Scene _menu;
         [SerializeField] private UnityObject _levelChanging;
 
-        private readonly IAsyncSceneLoading _sceneLoading = new AdressablesSceneLoading();
+        private readonly IAsyncSceneLoading _sceneLoading = new AddressablesSceneLoading();
 
         private ILevelChanging LevelChanging=>(ILevelChanging)_levelChanging;
 

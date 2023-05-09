@@ -16,7 +16,7 @@ namespace GameStates.States
         [SerializeField] private UnityObject _levelProvider;
         [SerializeField] private SOPathStructureContainer _pathStructureContainer;
 
-        private readonly IAsyncSceneLoading _sceneLoading= new AdressablesSceneLoading();
+        private readonly IAsyncSceneLoading _sceneLoading= new AddressablesSceneLoading();
         private Level Level => LevelProvider.Current;
         private ILevelProvider LevelProvider=>(ILevelProvider) _levelProvider;
 

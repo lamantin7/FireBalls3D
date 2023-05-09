@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 
 namespace SceneLoading
 {
-    public class AdressablesSceneLoading : IAsyncSceneLoading
+    public class AddressablesSceneLoading : IAsyncSceneLoading
     {
         private readonly Dictionary<string, SceneInstance> _loadedScenes= new Dictionary<string, SceneInstance>();
         public async Task LoadAsync(Scene scene)
