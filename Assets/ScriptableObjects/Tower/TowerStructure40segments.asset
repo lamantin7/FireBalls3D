@@ -15,7 +15,7 @@ MonoBehaviour:
   _segmentPrefab: {fileID: 6804229946843975454, guid: 779752122f0322b4fa59c056e5ff45b5,
     type: 3}
   _segmentCount: 40
-  _spawnTimePerSegment: 0.1
+  _spawnTimePerSegment: 0.05
   _materials:
   - {fileID: 2100000, guid: b2ad997d817ba8b41bbaae52e1523f01, type: 2}
   - {fileID: 2100000, guid: 26383c1766ad35242a69e2be21163f77, type: 2}

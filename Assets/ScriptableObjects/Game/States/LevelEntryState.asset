@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a078f3fbc2f113f4d8fcffc6cea94c2e, type: 3}
   m_Name: LevelEntryState
   m_EditorClassIdentifier: 
-  _locationScene:
-    Name: ArcticT 1
-    LoadMode: 0
   _playerGeneratedPathScene:
     Name: PlayerGeneratorPath
     LoadMode: 1
+  _levelProvider: {fileID: 11400000, guid: eaab180d0fd5a6c4394705510499ddb8, type: 2}
+  _pathStructureContainer: {fileID: 11400000, guid: 1c8e2162123f12043be199e3e168ab5a,
+    type: 2}

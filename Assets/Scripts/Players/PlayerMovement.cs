@@ -1,4 +1,6 @@
-﻿using Paths;
+﻿using GameStates.Base;
+using Paths;
+using Paths.Completion;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,6 +14,7 @@ namespace Players
     public class PlayerMovement:MonoBehaviour
     {      
         [SerializeField] private SOmovePreference _movePreferences;
+        [SerializeField] private SOGameStateMachine _stateMachine;
 
         [Header("Player")]
         [SerializeField] private PlayerInputHandler _inputHandler;
@@ -22,7 +25,7 @@ namespace Players
             _player.position = initialPosition;
             new PlayerPathFollowing(
                 new PathFollowing(path,_player,_movePreferences),
-                path,_inputHandler)
+                path,_inputHandler, new LevelPathCompletion(_stateMachine))
                 .StartMovingAsync(cancellationTokenSource.Token);
         }
 
