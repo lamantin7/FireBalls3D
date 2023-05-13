@@ -1,4 +1,5 @@
-﻿using Levels.Interfaces;
+﻿using IoC;
+using Levels.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,12 +13,12 @@ namespace Levels
     public class SOCurrentLevel : ScriptableObject, ILevelNumberProvider, ILevelProvider,ILevelChanging
     {
         [SerializeField] private SOLevelStorage _storage;
-        [SerializeField] private SOLevelNumber _levelNumber;
-        public int Value =>_levelNumber.Value;
-        public Level Current => _storage.Levels[_levelNumber.Value-1];
+        private LevelNumber LevelNumber=>Container.InstanceOf<LevelNumber>();
+        public int Value =>LevelNumber.Value;
+        public Level Current => _storage.Levels[LevelNumber.Value-1];
 
         public void StepToNextLevel()=>
-            _levelNumber.Value=Mathf.Clamp(_levelNumber.Value+1,1,_storage.Levels.Count);
+            LevelNumber.Value=Mathf.Clamp(LevelNumber.Value+1,1,_storage.Levels.Count);
         
     }
 }
