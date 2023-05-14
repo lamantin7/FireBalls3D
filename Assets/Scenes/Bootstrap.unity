@@ -223,7 +223,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067629896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ebf4940f758ada4bb4d37d5744e4313, type: 3}
+  m_Script: {fileID: 11500000, guid: bf576393aece489d8e614dfac6eb73c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _filePath: {fileID: 11400000, guid: 08ddea5016f837145ab15c17392c62cf, type: 2}
@@ -236,12 +236,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2067629896}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: adb3fe61dfb97d440a035b4b97936a11, type: 3}
+  m_Script: {fileID: 11500000, guid: 78194019e946431f920f62a731a76acd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _initializations:
-  - {fileID: 2067629897}
-  - {fileID: 2067629900}
+  _initializations: []
   _stateMachine: {fileID: 11400000, guid: f99fc1e7ec842de498781526e7a5fb06, type: 2}
 --- !u!4 &2067629899
 Transform:

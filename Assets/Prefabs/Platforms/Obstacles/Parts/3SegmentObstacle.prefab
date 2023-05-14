@@ -677,8 +677,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 3850616855626105728}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2f38e7897b85242b7258bb823b6542, type: 3}
+  m_Script: {fileID: 11500000, guid: 73c77b72896e464aa730267acd139e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _projectileFactory: {fileID: 11400000, guid: a14ba0fae50ade94ebac23f619706020, type: 2}
-  _bouncePreferences: {fileID: 11400000, guid: fd6a619461ccd104db169b8a820ee01a, type: 2}
+  _projectileFactory: {fileID: 0}
+  _bouncePreferences: {fileID: 0}
