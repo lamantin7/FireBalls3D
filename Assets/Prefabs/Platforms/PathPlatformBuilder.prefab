@@ -41,7 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6107360540372370675}
   - component: {fileID: 6107360540372370673}
-  - component: {fileID: 6107360540372370674}
+  - component: {fileID: 5340585077582849566}
   m_Layer: 0
   m_Name: ProjectileHitTrigger
   m_TagString: Untagged
@@ -77,7 +77,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6107360540372370674
+--- !u!114 &5340585077582849566
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -86,7 +86,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6107360540372370636}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a632ac8e712d3a7479b7e9a9c6963c2b, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c72152a4db04c89815cb74e4f1585d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &6107360540925545669
@@ -162,7 +162,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6107360540990434456}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 96f246d89c81ce24584496ae87df56d6, type: 3}
+  m_Script: {fileID: 11500000, guid: 8b4d39cb99a94bbd8fbfadfbe5cb0808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _root: {fileID: 6107360540925545668}
@@ -213,12 +213,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6107360540999958440}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 16176ac8d979fbd4785838f30fe95ec7, type: 3}
+  m_Script: {fileID: 11500000, guid: 4378d4e1695a407ebb035f54f423cd0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _towerRoot: {fileID: 6107360539781843104}
+  _towerRoot: {fileID: 6107360540999958447}
   _spawnAnimation: {fileID: 11400000, guid: 99a84639e95d54f47ba6cb0aee881e16, type: 2}
-  _projectileHitTrigger: {fileID: 6107360540372370674}
+  _projectileHitTrigger: {fileID: 5340585077582849566}
   _segmentsLeftText: {fileID: 6107360541261971575}
   _audio: {fileID: 6107360541176295859}
 --- !u!1 &6107360541176295821
@@ -360,10 +360,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 6107360541176295821}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67a4b2b351d21b744aa8738963063be0, type: 3}
+  m_Script: {fileID: 11500000, guid: 5a5a6266ef5a4f91a1dd3fc0c36bca9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _segmentRemovedSound: {fileID: 8300000, guid: ebb03b2b009894845b81a64051a5c698,
+  _segmentRemovedSound: {fileID: 8300000, guid: ae9ac757ba0b39e4f91369d167331c3e,
     type: 3}
   _startPitch: 1
   _maxPitch: 3
@@ -550,7 +550,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6107360541261971571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6134d0bbf0fa3de44818e0ac03f587a7, type: 3}
+  m_Script: {fileID: 11500000, guid: ae30b3f309634f0089413f55bfeae576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _text: {fileID: 6107360541261971569}
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6107360541562116667}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c0a3cc20226d7443bd355380f60b9ef, type: 3}
+  m_Script: {fileID: 11500000, guid: 746c70cd73044d0c8814a7cbaede8d6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _towerBuilder: {fileID: 6107360540999958446}
