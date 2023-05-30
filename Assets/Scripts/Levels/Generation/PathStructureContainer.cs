@@ -6,10 +6,10 @@ using System.Text;
 using System.Threading.Tasks;
 using UnityEngine;
 
-namespace Assets.Scripts.Levels.Generation
+namespace Levels.Generation
 {
-    [CreateAssetMenu(fileName = "PathStructureContainer", menuName = "ScriptableObjects/Levels/PathStructureContainer")]
-    internal class SOPathStructureContainer:ScriptableObject
+    
+    public class PathStructureContainer
     {
         public SOPathStructure PathStructure { get; set; }
     }

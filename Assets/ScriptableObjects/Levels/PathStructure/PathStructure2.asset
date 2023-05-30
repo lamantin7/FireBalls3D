@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19ee2bcbb4948ee4cbeb8ee11076d783, type: 3}
   m_Name: PathStructure2
   m_EditorClassIdentifier: 
-  _pathPrefab: {fileID: 5281659833714645087, guid: b1c234f3437d037429e441848136f800,
+  _pathPrefab: {fileID: 844218392518372174, guid: d13a8e9b2005a014a936654e8b553e10,
     type: 3}
   _platforms:
   - TowerStructure: {fileID: 11400000, guid: 6ee42e75ae0c2654c831a06444900cfb, type: 2}

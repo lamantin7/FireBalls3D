@@ -1,5 +1,6 @@
-﻿using Assets.Scripts.Levels.Generation;
+﻿using Levels.Generation;
 using GameStates.Base;
+using IoC;
 using Levels;
 using SceneLoading;
 using Tools;
@@ -14,7 +15,7 @@ namespace GameStates.States
         //[SerializeField] private Scene _locationScene;
         [SerializeField] private Scene _playerGeneratedPathScene;
         [SerializeField] private UnityObject _levelProvider;
-        [SerializeField] private SOPathStructureContainer _pathStructureContainer;
+       
 
         private readonly IAsyncSceneLoading _sceneLoading= new AddressablesSceneLoading();
         private Level Level => LevelProvider.Current;
@@ -26,7 +27,8 @@ namespace GameStates.States
         }
         public override async void Enter()
         {
-            _pathStructureContainer.PathStructure=Level.PathStructure;
+            Container.Register(new PathStructureContainer() { PathStructure=Level.PathStructure});
+            
            await _sceneLoading.LoadAsync(Level.LocationScene);
             await _sceneLoading.LoadAsync(_playerGeneratedPathScene);
 

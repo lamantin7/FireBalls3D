@@ -21,6 +21,10 @@ MonoBehaviour:
     m_Address: Assets/Prefabs/Menu/LevelMarker.prefab
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 9f38281fe81cff44cb3c2c92dfe24c02
+    m_Address: Menu
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 1c505e7634257b84e9d238b7629ed50a, type: 2}
   m_SchemaSet:

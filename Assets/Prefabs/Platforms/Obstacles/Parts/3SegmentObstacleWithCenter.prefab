@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1621517904171146306}
   - component: {fileID: 7573924944298463387}
   - component: {fileID: 6495712318243005678}
+  - component: {fileID: 8360085577375333642}
   m_Layer: 0
   m_Name: 3SegmentObstacle
   m_TagString: Untagged
@@ -677,7 +678,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 3196660585571653410}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8b2f38e7897b85242b7258bb823b6542, type: 3}
+  m_Script: {fileID: 11500000, guid: cecd7f9a7c744f769e8c2b9403300000, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _collision: {fileID: 8360085577375333642}
+--- !u!114 &8360085577375333642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3196660585571653410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c77b72896e464aa730267acd139e39, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   _projectileFactory: {fileID: 11400000, guid: a14ba0fae50ade94ebac23f619706020, type: 2}
@@ -692,6 +706,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7981449815016292500}
   - component: {fileID: 7254804513072950617}
+  - component: {fileID: -8778341475737668770}
   m_Layer: 0
   m_Name: 3SegmentObstacleWithCenter
   m_TagString: Untagged
@@ -769,3 +784,17 @@ MonoBehaviour:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-8778341475737668770
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8013729442993009820}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73c77b72896e464aa730267acd139e39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _projectileFactory: {fileID: 11400000, guid: a14ba0fae50ade94ebac23f619706020, type: 2}
+  _bouncePreferences: {fileID: 11400000, guid: fd6a619461ccd104db169b8a820ee01a, type: 2}

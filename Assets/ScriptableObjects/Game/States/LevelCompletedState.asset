@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 75e3bf70420b3d34b99f340de78f8e86, type: 3}
+  m_Script: {fileID: 11500000, guid: c50716aaa4534dc099a7f066d896d3f9, type: 3}
   m_Name: LevelCompletedState
   m_EditorClassIdentifier: 
   _menu:
