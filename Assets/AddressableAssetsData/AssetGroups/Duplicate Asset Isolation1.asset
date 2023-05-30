@@ -1,0 +1,173 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Duplicate Asset Isolation1
+  m_EditorClassIdentifier: 
+  m_GroupName: Duplicate Asset Isolation1
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 503925dde2ed3a74ba0f7e45231c51ce
+  m_SerializeEntries:
+  - m_GUID: f99fc1e7ec842de498781526e7a5fb06
+    m_Address: Assets/ScriptableObjects/Game/States/GameStateMachine.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 34851b04d2703a545abcaeb84865e661
+    m_Address: Assets/ScriptableObjects/Game/States/LevelEntryState.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4be2116a2fd63c94cb391d47e38ea3ea
+    m_Address: Assets/ScriptableObjects/Game/States/LevelLostState.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 74da460d7f1bab94e85bb7b4ba4817bf
+    m_Address: Assets/ScriptableObjects/Game/States/LevelCompletedState.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c8abf03d54162894f846bb38a7c81b1e
+    m_Address: Assets/ScriptableObjects/Game/States/MenuEntryState.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: eaab180d0fd5a6c4394705510499ddb8
+    m_Address: Assets/ScriptableObjects/Levels/CurrentLevel.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 8d8f65bff149ca34fb494e8fb64f9248
+    m_Address: Assets/ScriptableObjects/Levels/LevelStorage.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 970bc262635a0ae4587b93c23f7fe146
+    m_Address: Assets/ScriptableObjects/Levels/PathStructure/PathStructure2.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c3d6f01563e792442ae7a7627cdf37da
+    m_Address: Assets/ScriptableObjects/Levels/PathStructure/PathStructure3.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 2677ba1d97178d7418b8ac5784e91272
+    m_Address: Assets/ScriptableObjects/Levels/PathStructure/PathStructure1.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d3f7ff413ee02444ab5db2ed87465444
+    m_Address: Assets/ScriptableObjects/Tower/TowerStructure20segments.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6286b933c6ff2fd4985ad0ed29615d77
+    m_Address: Assets/ScriptableObjects/Tower/TowerStructure50segments.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b1c234f3437d037429e441848136f800
+    m_Address: Assets/Prefabs/Platforms/Paths/Path1 1 (1).prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6ee42e75ae0c2654c831a06444900cfb
+    m_Address: Assets/ScriptableObjects/Tower/TowerStructure25segments.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3aa4108bcbf578b44865288d79b438a3
+    m_Address: Assets/Prefabs/Platforms/Obstacles/Obstacle.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: d13a8e9b2005a014a936654e8b553e10
+    m_Address: Assets/Prefabs/Platforms/Paths/Path1 2.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c88c30bc7f32ade409b7314bd8931305
+    m_Address: Assets/ScriptableObjects/Tower/TowerStructure40segments.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 64ca495f0b0f8dc41b24190490aafa46
+    m_Address: Assets/Prefabs/Platforms/Paths/Path1.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 471bbc61de2af0a47bd80da0aacc49dc
+    m_Address: Assets/3rdParty/Customizable Skybox/Materials/pine tree green.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 779752122f0322b4fa59c056e5ff45b5
+    m_Address: Assets/Prefabs/Tower/6SideCylinderSegment.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: f9e8a256b2e009743bcefbdabbb05382
+    m_Address: Assets/3rdParty/LowPoly Environment Pack/FBX/Materials/Purple.1.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26383c1766ad35242a69e2be21163f77
+    m_Address: Assets/Materials/Tower/Segments/Purple.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 779672b87a6027e4fb52bd5c47f2c110
+    m_Address: Assets/3rdParty/LowPoly Environment Pack/FBX/Materials/Yellow.4.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b2ad997d817ba8b41bbaae52e1523f01
+    m_Address: Assets/Materials/Tower/Segments/Lazure.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e773be4e8e6c49f41bb67bfe941451c0
+    m_Address: Assets/3rdParty/LowPoly Environment Pack/FBX/Materials/Purple.2.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: fd6a619461ccd104db169b8a820ee01a
+    m_Address: Assets/ScriptableObjects/Physics/DirectionalBouncePreferences.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3518ab19d8da24044bd1a39937b18f9f
+    m_Address: Assets/ScriptableObjects/Tweening/ObstaclesDisappearAnimation.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 99a84639e95d54f47ba6cb0aee881e16
+    m_Address: Assets/ScriptableObjects/Tweening/FatstRotationTween.asset
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 31321ba15b8f8eb4c954353edc038b1d
+    m_Address: Packages/com.unity.render-pipelines.universal/Runtime/Materials/Lit.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ae9ac757ba0b39e4f91369d167331c3e
+    m_Address: Assets/Audio/Sounds/Free UI Click Sound Effects Pack/AUDIO/Pop/SFX_UI_Click_Organic_Pop_Metallic_Negative_Locked_1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ebb03b2b009894845b81a64051a5c698
+    m_Address: Assets/Audio/Sounds/Free UI Click Sound Effects Pack/AUDIO/Pop/SFX_UI_Click_Organic_Pop_Liquid_Thick_Generic_1.wav
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: ef7faa7e2bb3dad41900eba418d842b2
+    m_Address: Assets/Materials/Obstacles/Red.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c27a804ccdcb9d5498c6642f7ef99e1f
+    m_Address: Assets/Materials/Obstacles/GreyLine.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 26cdccddcb902054e8e40f4a19bbc388
+    m_Address: Assets/Materials/Platforms/Platforms.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3ddf7d5e43134794faf1baf61740b50d
+    m_Address: Assets/Materials/Platforms/Pilars.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4736906c225172d4eb1b7dd3e3acb990
+    m_Address: Assets/3rdParty/low poly pack/Materials/Color_M04.mat
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b2c61055c4a01ad43b08434f8178e1c9
+    m_Address: Assets/3rdParty/low poly pack/Lowpoly tree2.fbx
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 1c505e7634257b84e9d238b7629ed50a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 41cc5b228cface34595edb2469ec05dd, type: 2}
+    - {fileID: 11400000, guid: a5f0a353b8dc87145a25eb19ddcdc29c, type: 2}
